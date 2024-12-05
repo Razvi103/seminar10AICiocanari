@@ -2,6 +2,7 @@ package domain;
 
 public class ProsciuttoEFunghiPizza implements Pizza{
     private Double price;
+    private final String name="ProsciuttoEFunghi";
 
     public ProsciuttoEFunghiPizza(Double price) {
         this.price = price;
@@ -13,6 +14,10 @@ public class ProsciuttoEFunghiPizza implements Pizza{
 
     public void setPrice(Double price){
         this.price = price;
+    }
+
+    public String getName(){
+        return name;
     }
 
     @Override
